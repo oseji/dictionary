@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  @apply w-10/12 h-screen overflow-y-auto mx-auto bg-slate-800 p-3 text-white;
+  @apply w-11/12 lg:w-10/12 h-200 lg:h-100 overflow-y-auto mx-auto mt-9 lg:mt-16 bg-slate-800 p-3 text-white rounded-lg;
 }
 
 .container-heading {
@@ -15,21 +15,25 @@ body {
 }
 
 .input-bar {
-  @apply flex flex-row justify-center gap-5  text-black my-10;
+  @apply flex flex-col lg:flex-row justify-center gap-5  text-black my-10;
 }
 
 .word-input {
-  @apply rounded-lg w-1/2;
+  @apply rounded-lg w-full lg:w-1/2 py-2;
 }
 
 .search {
-  @apply text-black font-semibold bg-yellow-400 px-5 py-2 rounded-lg hover:bg-yellow-300 transition ease-in duration-150;
+  @apply w-1/2 lg:w-auto mx-auto lg:mx-0 text-black font-semibold bg-yellow-400 px-5 py-2 rounded-lg hover:bg-yellow-300 transition ease-in duration-150;
 }
 
 .results-heading {
-  @apply text-yellow-400 text-2xl text-center font-semibold tracking-tight my-5;
+  @apply text-yellow-400 text-2xl lg:text-center font-semibold tracking-tight my-5;
 }
 
 .searched-word {
-  @apply text-2xl text-yellow-400 uppercase;
+  @apply text-2xl lg:text-3xl text-yellow-400 font-semibold uppercase mb-5;
+}
+
+.searched-text {
+  @apply text-lg;
 }
